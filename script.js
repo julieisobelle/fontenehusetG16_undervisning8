@@ -14,12 +14,14 @@ Variabler:
 - var = utdatert variabel som kan bytte verdi men som IKKE skal brukes
 */
 const greeting = "God morgen";
-//greeting = "God ettermiddag";
 console.log(greeting);
+
 const userName = "Julie";
 console.log(userName);
+
 const time = 1044;
 console.log(time);
+
 const isPresent = true;
 console.log(isPresent);
 
@@ -29,11 +31,13 @@ function userProfile() {
   const title = "Veileder Kodeloftet";
   const isOnline = true;
 
-  console.log(
-    `Jeg heter ${name}, og jeg er ${age} år gammel. Jeg er ${title}. Er jeg online? ${isOnline}`
-  );
+  // Chaining method (med lagt med mellomrom i de ulike string tekstene)
+  console.log("Jeg heter " + name + ", og jeg er " + age + " år gammel. " + "Jeg er " + title + ". Og er tilgjengelig? " + isOnline);
+
+  // Template literal
+  console.log(`Jeg heter ${name}, og jeg er ${age} år gammel. Jeg er ${title}. Og er tilgjengelig? ${isOnline}`);
 
   const text = document.querySelector("h1");
-  text.textContent = `Jeg heter ${name}, og jeg er ${age} år gammel. Jeg er ${title}. Er jeg online? ${isOnline}`;
+  text.textContent = `Jeg heter ${name}, og jeg er ${age} år gammel. Jeg er ${title}. Og er tilgjengelig? ${isOnline}`;
 }
 userProfile();
