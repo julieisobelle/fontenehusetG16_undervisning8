@@ -1,0 +1,92 @@
+/* -- GLOBAL -- */
+img {
+  width: 100%;
+}
+
+/* -- HEADER -- */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  border: 5px solid black;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.navList {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+  gap: 16px;
+}
+
+.navLink {
+  color: black;
+}
+
+/* -- MAIN -- */
+.section {
+  height: 100vh;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.heroText,
+.heroImg {
+  width: 50%;
+}
+
+.heroText {
+  text-align: center;
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.aboutText,
+.aboutImg {
+  width: 50%;
+}
+
+.aboutText {
+  text-align: center;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  justify-content: space-around;
+}
+
+.projectCard {
+  border: 3px dotted black;
+  height: 500px;
+  padding: 0 8px 0 8px;
+}
+
+/* -- FOOTER -- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
